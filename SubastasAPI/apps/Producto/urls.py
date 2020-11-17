@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from .views import Lista
+from .views import *
 urlpatterns = [
-    path('Productos/', Lista.as_view()),
+    path('Productos/', ListaProductos.as_view()),
 
 
 ]
