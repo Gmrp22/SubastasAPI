@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Oferta
-class OfertaSerializer(ModelSerializer):
+from .models import Subasta
+class SubastaSerializer(ModelSerializer):
     class Meta:
-        model = Oferta
-        fields = ['NombreProducto', 'Estado','Precio_final']
+        model = Subasta
+        fields = ['id','NProducto', 'Estado','Precio_final']

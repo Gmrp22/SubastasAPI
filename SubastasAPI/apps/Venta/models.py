@@ -7,5 +7,5 @@ class Venta(models.Model):
     Fecha = models.DateField()
     #Vendedor = models.ForeignKey(Usuario, on_delete=models.CASCADE)
     Total = models.FloatField()
-    Subasta = models.ForeignKey(Subasta, on_delete=models.CASCADE)
-    Producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
+    Subasta = models.OneToOneField(Subasta, on_delete=models.CASCADE)
+    #Producto = models.OneToOneField(Producto, on_delete=models.CASCADE)
