@@ -27,7 +27,7 @@ class SubastaPut(RetrieveUpdateAPIView):
     lookup_field = 'pk'
 
 
-class SubastasDelete(RetrieveDestroyAPIView):
+class SubastaDelete(RetrieveDestroyAPIView):
     """ Eliminar una subasta """
     queryset = Subasta.objects.all()
     serializer_class = SubastaSerializer

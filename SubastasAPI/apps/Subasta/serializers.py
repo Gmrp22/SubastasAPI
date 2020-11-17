@@ -3,4 +3,4 @@ from .models import Subasta
 class SubastaSerializer(ModelSerializer):
     class Meta:
         model = Subasta
-        fields = ['id','NProducto', 'Estado','Precio_final']
+        fields = ['id','NProducto', 'Estado','Precio_Final']

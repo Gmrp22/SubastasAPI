@@ -4,7 +4,7 @@ from apps.Producto.models import Producto
 class Subasta(models.Model):
     """ Modelo para subastas"""
     NProducto = models.OneToOneField(Producto, on_delete=models.CASCADE, unique = True)    
-    Estado = models.CharField(max_length=200, blank =True, default='')
+    Estado = models.CharField(max_length=200, blank =True, default='Espera')
     Precio_Final = models.FloatField(blank=True, default=0)
 
     def __str__(self):
